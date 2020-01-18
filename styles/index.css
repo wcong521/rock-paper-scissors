@@ -1,0 +1,209 @@
+:root {
+    --main-font: "Source Sans Pro", sans-serif;
+    --main-font-size: 14px;
+}
+
+h1, #title-2 {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-weight: normal;
+
+    font-family: var(--main-font);
+    font-size: 48px;
+    text-align: center;
+}
+
+#rock {
+    font-weight: bold;
+}
+
+#paper {
+    font-style: normal;
+}
+
+#scissors {
+    font-style: italic;
+}
+
+#title-1 {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+#title-2 {
+    font-family: var(--main-font);
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    font-size: 24px;
+    display: none;
+}
+
+#num-round-form {
+    height: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+#form-help {
+    font-family: var(--main-font);
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+#number-input {
+    border: 2px black solid;
+    border-radius: 5px;
+    width: 90px;
+    font-size: 18px;
+    height: 2em;
+    padding: 0 10px;
+}
+
+#number-input:focus {
+    outline: none;
+}
+
+#play-button {
+    font-size: 16px;
+    font-weight: 800;
+    border-radius: 5px;
+    width: 60px;
+    border: 2px black solid;
+    background: none;
+    color: black;
+    padding: 10px 8px 8px 8px;
+    margin-left: 3px;
+}
+
+#play-button:hover {
+    background: black;
+    color: white;
+}
+
+#warning-dialog {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 100%;
+    text-align: center;
+    font-family: var(--main-font);
+    font-size: 16px;
+    text-align: center;
+
+    margin-top: 15px;
+    padding: 5px;
+    background: rgb(226, 14, 14);
+    color: white;
+    border-radius: 5px;
+}
+
+#game, #warning-dialog, #rematch-container {
+    display: none;
+}
+
+#options-container {
+    position: absolute;
+    width: 420px;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+#options-container button {
+    /* position: absolute; */
+    float: left;
+    width: 120px;
+    margin: 10px;
+    height: 12em;
+
+    border-radius: 5px;
+    border: none;
+    background: #F8F8F8;
+}
+
+#options-container button:focus {
+    outline: none;
+}
+
+#options-container button:hover {
+    border: 1px #E5E5E5 solid;
+}
+
+#options-container button img {
+    width: 30%;
+}
+
+#game-console {
+    font-family: var(--main-font);
+    text-align: center;
+    position: absolute;
+    top: 62%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+#game-stats {
+    position: absolute;
+    top: 56%;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    border: 1px black solid;
+    background: black;
+    border-radius: 5px;
+
+    padding: 5px;
+}
+
+#game-stats div{
+    font-family: var(--main-font);
+    font-size: 14px;
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+
+    float: left;
+    margin: 0 5px;
+}
+
+#game-stats:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+#rematch-container {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    
+}
+
+#rematch-container button {
+    border: 2px black solid;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: var(--main-font);
+    background: none;
+    text-transform: uppercase;
+    padding: 7px;
+}
+
+#rematch-container button:focus {
+    outline: none;
+}
+
+#rematch-container button:hover {
+    background: black;
+    color: white;
+}
